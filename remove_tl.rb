@@ -8,7 +8,7 @@ File.open(file_name, "w") {|file| file.puts new_contents }
 # Remove turbolinks from Gemfile
 file_name = './Gemfile'
 text = File.read(file_name)
-new_contents = text.gsub(/gem 'turbolinks'/, "#gem 'turbolinks'")
+new_contents = text.gsub(/gem 'turbolinks'/, "# gem 'turbolinks'")
 #Write changes to the file, use:
 File.open(file_name, "w") {|file| file.puts new_contents }
 
